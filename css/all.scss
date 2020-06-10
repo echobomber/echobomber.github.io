@@ -593,6 +593,22 @@ header{
 	}
 }
 }
+@media(max-width: 768px){
+	.Center-Title{
+		font-size: 28px;	
+	}
+}
+.mobile-oneCol-table{
+	display: none;
+}
+@media(max-width: 768px){
+	.Pc-table{
+		display: none;
+	}
+	.mobile-oneCol-table{
+		display: block;
+	}
+}
 //統整page樣式(異言堂、新聞)
 // .articleCard{
 // 	background-color: white;
