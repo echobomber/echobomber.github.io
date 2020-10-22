@@ -12,11 +12,11 @@ img {
 }
 
 .sanstc {
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 .seriftc {
-  font-family: "Noto Serif TC", serif;
+  font-family: 'Noto Serif TC', serif;
 }
 
 #scrollTopBtn {
@@ -40,7 +40,8 @@ img {
 }
 
 .top-nav {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: white;
 }
 
@@ -54,19 +55,24 @@ nav .nav-logo {
   color: black;
   font-weight: bold;
 }
+
 nav ul {
   margin-bottom: 0;
 }
+
 nav ul li {
   float: left;
   margin-right: 3px;
 }
+
 nav ul li a {
   color: black;
   display: block;
   padding: 0.8rem 1.2rem;
+  -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
+
 nav ul a:hover {
   color: white;
   background-color: black;
@@ -74,6 +80,7 @@ nav ul a:hover {
 
 .clickOpenSideNav {
   display: none;
+  -webkit-transition: all 0.35s;
   transition: all 0.35s;
   color: black;
   font-weight: bold;
@@ -91,7 +98,6 @@ nav ul a:hover {
     display: block;
     margin-right: 10px;
   }
-
   nav .nav-logo {
     font-size: 25px;
     padding-left: 20px;
@@ -100,6 +106,7 @@ nav ul a:hover {
     display: none;
   }
 }
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -109,6 +116,7 @@ nav ul a:hover {
   right: 0;
   background-color: #111;
   overflow-x: hidden;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   padding-top: 60px;
 }
@@ -119,6 +127,7 @@ nav ul a:hover {
   font-size: 25px;
   color: #818181;
   display: block;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -135,6 +144,7 @@ nav ul a:hover {
 }
 
 #main {
+  -webkit-transition: margin-right 0.5s;
   transition: margin-right 0.5s;
 }
 
@@ -145,25 +155,31 @@ header .carousel-pics {
   background-attachment: fixed;
   height: 85vh;
 }
+
 header .carousel-text {
   position: relative;
   top: 20vh;
 }
+
 header .carousel-text a {
   color: white;
+  -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
   max-width: 80%;
 }
+
 header .carousel-text a h2 {
   font-size: 60px;
   font-weight: bold;
-  font-family: "Noto Serif TC", serif;
+  font-family: 'Noto Serif TC', serif;
   letter-spacing: 1px;
   margin-bottom: 1rem;
 }
+
 header .carousel-text a p {
   letter-spacing: 2px;
 }
+
 header .carousel-text .carousel-link:hover {
   opacity: 0.75;
 }
@@ -173,6 +189,7 @@ header .carousel-text .carousel-link:hover {
     top: 15vh;
   }
 }
+
 @media (max-width: 767px) {
   header .carousel-text {
     top: 15vh;
@@ -188,6 +205,7 @@ header .carousel-text .carousel-link:hover {
     font-size: 0.9rem;
   }
 }
+
 @media (max-width: 320px) {
   header .carousel-text {
     top: 10vh;
@@ -199,6 +217,7 @@ header .carousel-text .carousel-link:hover {
     font-size: 0.8rem;
   }
 }
+
 .h-450 {
   height: 450px;
 }
@@ -228,6 +247,7 @@ header .carousel-text .carousel-link:hover {
     margin-left: 5px;
   }
 }
+
 .news {
   position: relative;
   color: white;
@@ -238,9 +258,11 @@ header .carousel-text .carousel-link:hover {
   background-repeat: no-repeat;
   border: 1px solid rgba(0, 0, 0, 0.15);
   letter-spacing: 1px;
+  -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
   border-radius: 5px;
 }
+
 .news .news-text {
   position: absolute;
   left: 0;
@@ -249,6 +271,7 @@ header .carousel-text .carousel-link:hover {
   padding: 40px;
   letter-spacing: 1.2px;
 }
+
 .news .news-text h3 {
   font-size: 45px;
 }
@@ -261,13 +284,16 @@ header .carousel-text .carousel-link:hover {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border-image: green;
+  -o-border-image: green;
+     border-image: green;
   float: left;
 }
+
 .writer .writer-intro {
   float: left;
   letter-spacing: 0.7px;
 }
+
 .writer .writer-intro p {
   font-size: 15px;
   margin: 0;
@@ -285,6 +311,7 @@ header .carousel-text .carousel-link:hover {
     font-size: 16px;
   }
 }
+
 @media (max-width: 320px) {
   .news {
     height: 250px;
@@ -296,6 +323,7 @@ header .carousel-text .carousel-link:hover {
     display: none;
   }
 }
+
 .news:hover {
   color: white;
 }
@@ -304,9 +332,12 @@ header .carousel-text .carousel-link:hover {
   border: 1px solid rgba(0, 0, 0, 0.15);
   height: 450px;
   border-radius: 5px;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
+
 .card-wrap h5, .card-wrap p {
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -318,6 +349,7 @@ header .carousel-text .carousel-link:hover {
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 5px 5px 0 0;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -326,11 +358,14 @@ header .carousel-text .carousel-link:hover {
 }
 
 .card-wrap:hover {
-  box-shadow: 1.3px 1.3px 8px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1.3px 1.3px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 1.3px 1.3px 8px rgba(0, 0, 0, 0.15);
 }
+
 .card-wrap:hover .article-pics {
   opacity: 0.9;
 }
+
 .card-wrap:hover .article-link h5, .card-wrap:hover .article-link p {
   color: #17a2b8;
 }
@@ -339,20 +374,20 @@ header .carousel-text .carousel-link:hover {
   .article-pics {
     height: 250px;
   }
-
   .card-wrap {
     height: 480px;
   }
-
   .article-link h5 {
     font-size: 1.2rem;
   }
 }
+
 @media (max-width: 320px) {
   .card-wrap {
     height: 500px;
   }
 }
+
 .fb-link {
   width: 100%;
   height: 300px;
@@ -360,6 +395,7 @@ header .carousel-text .carousel-link:hover {
   margin-left: 0;
   border-radius: 5px;
 }
+
 .fb-link .icon {
   display: block;
   width: 100px;
@@ -369,42 +405,93 @@ header .carousel-text .carousel-link:hover {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 .fb-link p {
   color: white;
   font-size: 20px;
 }
+
 .fb-link .icon, .fb-link p, .fb-link button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
 }
+
 .fb-link button {
   display: block;
 }
+
 .fb-link button a {
   display: block;
   color: white;
 }
+
 .fb-link button a:hover {
   color: black;
 }
+
 .fb-link button:hover a {
   color: #17a2b8;
+}
+
+.Game-link {
+  width: 100%;
+  height: 300px;
+  background-color: #879b78;
+  margin-left: 0;
+  border-radius: 5px;
+}
+
+.Game-link .icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/logo-1.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.Game-link p {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.Game-link .icon, .Game-link p, .Game-link button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.Game-link button {
+  display: block;
+}
+
+.Game-link button a {
+  display: block;
+  color: #ffffff;
+}
+
+.Game-link button a:hover {
+  color: #000000;
+}
+
+.Game-link button:hover a {
+  color: #879b78;
 }
 
 @media (max-width: 576px) {
   h3 {
     font-size: 1.35rem;
   }
-
   p {
     font-size: 1rem;
   }
-
   h5 {
     font-size: 1rem;
   }
 }
+
 .font-highlight {
   color: #f60;
 }
@@ -416,6 +503,7 @@ header .carousel-text .carousel-link:hover {
 .outsideLink p {
   color: black;
 }
+
 .outsideLink a {
   width: 100%;
   color: #17a2b8;
@@ -434,6 +522,7 @@ header .carousel-text .carousel-link:hover {
     margin-top: 0;
   }
 }
+
 header .readingPage-pics {
   background-size: cover;
   background-position: center center;
@@ -441,17 +530,20 @@ header .readingPage-pics {
   background-attachment: fixed;
   height: 85vh;
 }
+
 header .readingPage-text {
   position: relative;
   top: 20vh;
   color: white;
+  -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
   max-width: 80%;
 }
+
 header .readingPage-text h2 {
   font-size: 60px;
   font-weight: bold;
-  font-family: "Noto Serif TC", serif;
+  font-family: 'Noto Serif TC', serif;
   letter-spacing: 1px;
   margin-bottom: 1rem;
 }
@@ -461,6 +553,7 @@ header .readingPage-text h2 {
     top: 15vh;
   }
 }
+
 @media (max-width: 767px) {
   header .readingPage-text {
     top: 15vh;
@@ -471,6 +564,7 @@ header .readingPage-text h2 {
     font-size: 2rem;
   }
 }
+
 @media (max-width: 320px) {
   header .readingPage-text {
     top: 10vh;
@@ -482,6 +576,7 @@ header .readingPage-text h2 {
     font-size: 0.8rem;
   }
 }
+
 .hint {
   padding: 35px;
 }
@@ -494,12 +589,15 @@ header .readingPage-text h2 {
     font-size: 1.2rem;
   }
 }
+
 .reading-page-writer img {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border-image: green;
+  -o-border-image: green;
+     border-image: green;
 }
+
 .reading-page-writer p {
   font-size: 20px;
   margin: 0;
@@ -509,6 +607,7 @@ header .readingPage-text h2 {
 .article-buttom-writer {
   background-color: #f2f2f2;
 }
+
 .article-buttom-writer img {
   width: 120px;
   height: 120px;
@@ -531,6 +630,7 @@ header .readingPage-text h2 {
     font-size: 1rem;
   }
 }
+
 .readingArticle {
   font-size: 1.2rem;
   letter-spacing: 1.2px;
@@ -547,6 +647,7 @@ header .readingPage-text h2 {
     font-size: 1rem;
   }
 }
+
 .readingArticle-wrap {
   max-width: 830px;
   margin: 0 auto;
@@ -559,6 +660,7 @@ header .readingPage-text h2 {
     padding-left: 0.2rem;
   }
 }
+
 .Note-table h5 {
   text-align: center;
 }
@@ -568,11 +670,13 @@ header .readingPage-text h2 {
     text-align: left;
   }
 }
+
 @media (max-width: 768px) {
   .Center-Title {
     font-size: 28px;
   }
 }
+
 .mobile-oneCol-table {
   display: none;
 }
@@ -581,11 +685,11 @@ header .readingPage-text h2 {
   .Pc-table {
     display: none;
   }
-
   .mobile-oneCol-table {
     display: block;
   }
 }
+
 .aboutUs-block {
   height: 50vh;
 }
@@ -601,6 +705,7 @@ header .readingPage-text h2 {
 .blockText {
   width: 70%;
 }
+
 .blockText h3, .blockText h4, .blockText h5 {
   line-height: 1.5;
   letter-spacing: 1px;
@@ -614,6 +719,7 @@ header .readingPage-text h2 {
     font-size: 1.2rem;
   }
 }
+
 .teamMember {
   position: relative;
   border-radius: 5px;
@@ -622,17 +728,21 @@ header .readingPage-text h2 {
   height: 350px;
   margin-top: 120px;
 }
+
 .teamMember img {
   border-radius: 50%;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 200px;
   height: 200px;
 }
+
 .teamMember h4 {
   margin-top: 115px;
 }
+
 .teamMember p {
   line-height: 1.6;
   letter-spacing: 0.8px;
@@ -643,6 +753,7 @@ header .readingPage-text h2 {
     font-size: 0.9rem;
   }
 }
+
 @media (max-width: 320px) {
   .teamMember h4 {
     font-size: 1.3rem;
@@ -651,3 +762,4 @@ header .readingPage-text h2 {
     font-size: 0.85rem;
   }
 }
+/*# sourceMappingURL=all.css.map */
